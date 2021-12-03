@@ -1,0 +1,15 @@
+com/ramptests/MainApplication.java
+ com.ramptests.MainApplication
+ com.ramptests.MainApplication$1
+com/ramptests/ReactNativeFlipper.java
+ com.ramptests.ReactNativeFlipper
+ com.ramptests.ReactNativeFlipper$1
+ com.ramptests.ReactNativeFlipper$2
+ com.ramptests.ReactNativeFlipper$2$1
+com/ramptests/MainActivity.java
+ com.ramptests.MainActivity
+ com.ramptests.MainActivity$1
+com/ramptests/BuildConfig.java
+ com.ramptests.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

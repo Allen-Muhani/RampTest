@@ -1,0 +1,526 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ramptests"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:5:3-75
+11-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:5:20-73
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:3:3-64
+12-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:3:20-62
+13    <uses-permission android:name="android.permission.VIBRATE" /> <!-- These require runtime permissions on M -->
+13-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:6:3-63
+13-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:6:20-61
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:8:3-77
+14-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:8:20-75
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- END OPTIONAL PERMISSIONS -->
+15-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:9:3-78
+15-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:9:20-76
+16    <queries>
+16-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:12:3-19:13
+17
+18        <!-- Support checking for http(s) links via the Linking API -->
+19        <intent>
+19-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:14:5-18:14
+20            <action android:name="android.intent.action.VIEW" />
+20-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:15:7-59
+20-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:15:15-56
+21
+22            <category android:name="android.intent.category.BROWSABLE" />
+22-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:16:7-68
+22-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:16:17-65
+23
+24            <data android:scheme="https" />
+24-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:17:7-38
+24-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:17:13-35
+25        </intent>
+26        <!-- Query open documents -->
+27        <intent>
+27-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:18
+28            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+28-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-79
+28-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:21-76
+29        </intent>
+30    </queries>
+31
+32    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+32-->[com.facebook.flipper:flipper:0.54.0] /home/allen/.gradle/caches/transforms-3/62ece1a98ef095db320a1cbbfb42e6fd/transformed/jetified-flipper-0.54.0/AndroidManifest.xml:16:5-76
+32-->[com.facebook.flipper:flipper:0.54.0] /home/allen/.gradle/caches/transforms-3/62ece1a98ef095db320a1cbbfb42e6fd/transformed/jetified-flipper-0.54.0/AndroidManifest.xml:16:22-73
+33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+33-->[:expo-updates] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-updates/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
+33-->[:expo-updates] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-updates/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-76
+34    <uses-permission android:name="android.permission.CAMERA" />
+34-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:13:5-65
+34-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:13:22-62
+35    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+35-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:18:5-82
+35-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:18:22-79
+36    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+36-->[com.android.installreferrer:installreferrer:1.0] /home/allen/.gradle/caches/transforms-3/83a63c6524a7f87c9debfb09e0ca2b7e/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+36-->[com.android.installreferrer:installreferrer:1.0] /home/allen/.gradle/caches/transforms-3/83a63c6524a7f87c9debfb09e0ca2b7e/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+37
+38    <supports-screens
+38-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:12:5-17:39
+39        android:anyDensity="true"
+39-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:13:9-34
+40        android:largeScreens="true"
+40-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:14:9-36
+41        android:normalScreens="true"
+41-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:15:9-37
+42        android:resizeable="true"
+42-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:16:9-34
+43        android:smallScreens="true" />
+43-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:17:9-36
+44
+45    <uses-permission android:name="android.permission.FLASHLIGHT" />
+45-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:20:5-69
+45-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:20:22-66
+46
+47    <uses-feature
+47-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:22:5-24:36
+48        android:name="android.hardware.camera"
+48-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:23:9-47
+49        android:required="false" />
+49-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:24:9-33
+50    <uses-feature
+50-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:25:5-27:36
+51        android:name="android.hardware.camera.autofocus"
+51-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:26:9-57
+52        android:required="false" />
+52-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:27:9-33
+53    <uses-feature
+53-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:28:5-30:36
+54        android:name="android.hardware.camera.flash"
+54-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:29:9-53
+55        android:required="false" />
+55-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:30:9-33
+56    <uses-feature
+56-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:31:5-34:20
+57        android:glEsVersion="0x00020000"
+57-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:32:9-41
+58        android:required="false" >
+58-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:33:9-33
+59    </uses-feature>
+60
+61    <application
+61-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:21:3-31:17
+62        android:name="com.ramptests.MainApplication"
+62-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:21:16-47
+63        android:allowBackup="false"
+63-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:21:162-189
+64        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+64-->[androidx.core:core:1.6.0] /home/allen/.gradle/caches/transforms-3/63630bff35c5941492530625c68eb7d4/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+65        android:debuggable="true"
+66        android:icon="@mipmap/ic_launcher"
+66-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:21:81-115
+67        android:label="@string/app_name"
+67-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:21:48-80
+68        android:largeHeap="true"
+68-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:25:9-33
+69        android:launchMode="singleTask"
+69-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:13:9-40
+70        android:roundIcon="@mipmap/ic_launcher_round"
+70-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:21:116-161
+71        android:supportsRtl="true"
+71-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:14:9-35
+72        android:theme="@style/AppTheme"
+72-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:21:190-221
+73        android:usesCleartextTraffic="true" >
+73-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:21:222-257
+74        <meta-data
+74-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:22:5-103
+75            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+75-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:22:16-67
+76            android:value="YOUR-APP-URL-HERE" />
+76-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:22:68-101
+77        <meta-data
+77-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:23:5-112
+78            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+78-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:23:16-68
+79            android:value="YOUR-APP-SDK-VERSION-HERE" />
+79-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:23:69-110
+80
+81        <activity
+81-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:24:5-29:16
+82            android:name="com.ramptests.MainActivity"
+82-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:24:15-43
+83            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+83-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:24:77-154
+84            android:label="@string/app_name"
+84-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:24:44-76
+85            android:launchMode="singleTask"
+85-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:24:155-186
+86            android:theme="@style/Theme.App.SplashScreen"
+86-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:24:230-275
+87            android:windowSoftInputMode="adjustResize" >
+87-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:24:187-229
+88            <intent-filter>
+88-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:25:7-28:23
+89                <action android:name="android.intent.action.MAIN" />
+89-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:26:9-60
+89-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:26:17-58
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:27:9-68
+91-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:27:19-66
+92            </intent-filter>
+93        </activity>
+94        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+94-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:30:5-81
+94-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:30:15-79
+95
+96        <provider
+96-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-34:20
+97            android:name="expo.modules.filesystem.FileSystemFileProvider"
+97-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-74
+98            android:authorities="com.ramptests.FileSystemFileProvider"
+98-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-74
+99            android:exported="false"
+99-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-37
+100            android:grantUriPermissions="true" >
+100-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-47
+101            <meta-data
+101-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-33:70
+102                android:name="android.support.FILE_PROVIDER_PATHS"
+102-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-67
+103                android:resource="@xml/file_system_provider_paths" />
+103-->[:expo-file-system] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:17-67
+104        </provider>
+105
+106        <meta-data
+106-->[:expo-modules-core] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:89
+107            android:name="org.unimodules.core.AppLoader#react-native-headless"
+107-->[:expo-modules-core] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
+108            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+108-->[:expo-modules-core] /home/allen/Projects/BlockChain/RampTests/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-86
+109
+110        <activity
+110-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:15:9-29:20
+111            android:name="network.ramp.sdk.ui.activity.RampWidgetActivity"
+111-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:16:13-75
+112            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+112-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:17:13-122
+113            android:launchMode="singleTask"
+113-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:18:13-44
+114            android:theme="@style/RampInstant.NoActionBar"
+114-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:19:13-59
+115            android:windowSoftInputMode="adjustResize" >
+115-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:20:13-55
+116            <intent-filter>
+116-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:21:13-28:29
+117                <action android:name="android.intent.action.VIEW" />
+117-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:15:7-59
+117-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:15:15-56
+118
+119                <category android:name="android.intent.category.DEFAULT" />
+119-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:24:17-76
+119-->[com.github.RampNetwork:ramp-sdk-android:1.3.1] /home/allen/.gradle/caches/transforms-3/d06aa6b5d572f692ef2cc19353dbaebd/transformed/jetified-ramp-sdk-android-1.3.1/AndroidManifest.xml:24:27-73
+120                <category android:name="android.intent.category.BROWSABLE" />
+120-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:16:7-68
+120-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:16:17-65
+121
+122                <data android:scheme="ramp" />
+122-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:17:7-38
+122-->/home/allen/Projects/BlockChain/RampTests/android/app/src/main/AndroidManifest.xml:17:13-35
+123            </intent-filter>
+124        </activity>
+125        <activity
+125-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:27:9-30:66
+126            android:name="com.passbase.passbase_sdk.ui.animation_screen.AnimationScreen"
+126-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:28:13-89
+127            android:screenOrientation="portrait"
+127-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:29:13-49
+128            android:theme="@style/Theme.AppCompat.NoActionBar" />
+128-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:30:13-63
+129        <activity
+129-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:31:9-34:66
+130            android:name="com.passbase.passbase_sdk.ui.start_screen.StartScreen"
+130-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:32:13-81
+131            android:screenOrientation="portrait"
+131-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:33:13-49
+132            android:theme="@style/Theme.AppCompat.NoActionBar" />
+132-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:34:13-63
+133        <activity
+133-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:35:9-38:66
+134            android:name="com.passbase.passbase_sdk.ui.consent_screen.ConsentScreen"
+134-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:36:13-85
+135            android:screenOrientation="portrait"
+135-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:37:13-49
+136            android:theme="@style/Theme.AppCompat.NoActionBar" />
+136-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:38:13-63
+137        <activity
+137-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:39:9-43:67
+138            android:name="com.passbase.passbase_sdk.ui.email_screen.EmailScreen"
+138-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:40:13-81
+139            android:screenOrientation="portrait"
+139-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:41:13-49
+140            android:theme="@style/Theme.AppCompat.NoActionBar"
+140-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:42:13-63
+141            android:windowSoftInputMode="stateHidden|adjustPan" />
+141-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:43:13-64
+142        <activity
+142-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:44:9-47:66
+143            android:name="com.passbase.passbase_sdk.ui.liveness_check.LivenessScreen"
+143-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:45:13-86
+144            android:screenOrientation="portrait"
+144-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:46:13-49
+145            android:theme="@style/Theme.AppCompat.NoActionBar" />
+145-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:47:13-63
+146        <activity
+146-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:48:9-51:66
+147            android:name="com.passbase.passbase_sdk.ui.liveness_manual.LivenessManualActivity"
+147-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:49:13-95
+148            android:screenOrientation="portrait"
+148-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:50:13-49
+149            android:theme="@style/Theme.AppCompat.NoActionBar" />
+149-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:51:13-63
+150        <activity
+150-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:52:9-56:67
+151            android:name="com.passbase.passbase_sdk.ui.country.CountryScreen"
+151-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:53:13-78
+152            android:screenOrientation="portrait"
+152-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:54:13-49
+153            android:theme="@style/Theme.AppCompat.NoActionBar"
+153-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:55:13-63
+154            android:windowSoftInputMode="stateHidden|adjustPan" />
+154-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:56:13-64
+155        <activity
+155-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:57:9-60:66
+156            android:name="com.passbase.passbase_sdk.ui.identity_document_check.IdentityDocumentScreen"
+156-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:58:13-103
+157            android:screenOrientation="portrait"
+157-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:59:13-49
+158            android:theme="@style/Theme.AppCompat.NoActionBar" />
+158-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:60:13-63
+159        <activity
+159-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:61:9-64:66
+160            android:name="com.passbase.passbase_sdk.ui.additional_document_verification.AdditionalDocumentVerificationScreen"
+160-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:62:13-126
+161            android:screenOrientation="portrait"
+161-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:63:13-49
+162            android:theme="@style/Theme.AppCompat.NoActionBar" />
+162-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:64:13-63
+163        <activity
+163-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:65:9-68:66
+164            android:name="com.passbase.passbase_sdk.ui.uploading.UploadingScreen"
+164-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:66:13-82
+165            android:screenOrientation="portrait"
+165-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:67:13-49
+166            android:theme="@style/Theme.AppCompat.NoActionBar" />
+166-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:68:13-63
+167        <activity
+167-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:69:9-72:66
+168            android:name="com.passbase.passbase_sdk.ui.finish.FinishScreen"
+168-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:70:13-76
+169            android:screenOrientation="portrait"
+169-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:71:13-49
+170            android:theme="@style/Theme.AppCompat.NoActionBar" />
+170-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:72:13-63
+171        <activity
+171-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:73:9-76:66
+172            android:name="com.passbase.passbase_sdk.ui.microblink.Microbl"
+172-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:74:13-75
+173            android:screenOrientation="portrait"
+173-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:75:13-49
+174            android:theme="@style/Theme.AppCompat.NoActionBar" />
+174-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:76:13-63
+175        <activity
+175-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:77:9-80:66
+176            android:name="com.passbase.passbase_sdk.ui.microblink_manual.MicroblinkManualActivity"
+176-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:78:13-99
+177            android:screenOrientation="portrait"
+177-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:79:13-49
+178            android:theme="@style/Theme.AppCompat.NoActionBar" />
+178-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:80:13-63
+179        <activity
+179-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:81:9-84:66
+180            android:name="com.passbase.passbase_sdk.ui.error.ErrorScreen"
+180-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:82:13-74
+181            android:screenOrientation="portrait"
+181-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:83:13-49
+182            android:theme="@style/Theme.AppCompat.NoActionBar" />
+182-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:84:13-63
+183        <activity
+183-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:85:9-88:66
+184            android:name="com.passbase.passbase_sdk.ui.close_confirmation.CloseConfirmationScreen"
+184-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:86:13-99
+185            android:screenOrientation="portrait"
+185-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:87:13-49
+186            android:theme="@style/Theme.AppCompat.NoActionBar" />
+186-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:88:13-63
+187        <activity
+187-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:89:9-92:66
+188            android:name="com.passbase.passbase_sdk.ui.reauth.reauth_error.ReAuthErrorScreen"
+188-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:90:13-94
+189            android:screenOrientation="portrait"
+189-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:91:13-49
+190            android:theme="@style/Theme.AppCompat.NoActionBar" />
+190-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:92:13-63
+191        <activity
+191-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:93:9-96:66
+192            android:name="com.passbase.passbase_sdk.ui.reauth.reauth_email.ReAuthEmailScreen"
+192-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:94:13-94
+193            android:screenOrientation="portrait"
+193-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:95:13-49
+194            android:theme="@style/Theme.AppCompat.NoActionBar" />
+194-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:96:13-63
+195        <activity
+195-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:97:9-100:66
+196            android:name="com.passbase.passbase_sdk.ui.reauth.reauth_email_error.ReAuthPreEmailErrorScreen"
+196-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:98:13-108
+197            android:screenOrientation="portrait"
+197-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:99:13-49
+198            android:theme="@style/Theme.AppCompat.NoActionBar" />
+198-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:100:13-63
+199        <activity
+199-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:101:9-104:66
+200            android:name="com.passbase.passbase_sdk.ui.reusable_resource.IdentityDocumentCheckScreen"
+200-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:102:13-102
+201            android:screenOrientation="portrait"
+201-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:103:13-49
+202            android:theme="@style/Theme.AppCompat.NoActionBar" />
+202-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:104:13-63
+203
+204        <meta-data
+204-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:106:9-108:36
+205            android:name="com.google.mlkit.vision.DEPENDENCIES"
+205-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:107:13-64
+206            android:value="face" />
+206-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:108:13-33
+207
+208        <provider
+208-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:110:9-112:69
+209            android:name="com.passbase.passbase_sdk.PBInitProvider"
+209-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:111:13-68
+210            android:authorities="com.ramptests.PBInitProvider" />
+210-->[com.passbase:passbase_sdk:2.7.8] /home/allen/.gradle/caches/transforms-3/d7119237747594e9cdf4fa4a646bbcfd/transformed/jetified-passbase_sdk-2.7.8/AndroidManifest.xml:112:13-66
+211
+212        <service
+212-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /home/allen/.gradle/caches/transforms-3/d26e39535a1a261a83d45ae556ee1b27/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:9:9-15:19
+213            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+213-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /home/allen/.gradle/caches/transforms-3/d26e39535a1a261a83d45ae556ee1b27/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:10:13-91
+214            android:directBootAware="true"
+214-->[com.google.mlkit:common:17.1.1] /home/allen/.gradle/caches/transforms-3/d6d6f0278750bbd8560c814db5fe6c74/transformed/jetified-common-17.1.1/AndroidManifest.xml:17:13-43
+215            android:exported="false" >
+215-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /home/allen/.gradle/caches/transforms-3/d26e39535a1a261a83d45ae556ee1b27/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:11:13-37
+216            <meta-data
+216-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /home/allen/.gradle/caches/transforms-3/d26e39535a1a261a83d45ae556ee1b27/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:12:13-14:85
+217                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+217-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /home/allen/.gradle/caches/transforms-3/d26e39535a1a261a83d45ae556ee1b27/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:13:17-114
+218                android:value="com.google.firebase.components.ComponentRegistrar" />
+218-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] /home/allen/.gradle/caches/transforms-3/d26e39535a1a261a83d45ae556ee1b27/transformed/jetified-play-services-mlkit-face-detection-16.2.0/AndroidManifest.xml:14:17-82
+219            <meta-data
+219-->[com.google.mlkit:vision-common:16.5.0] /home/allen/.gradle/caches/transforms-3/1dea126ebe3b1042abbc503d09ec7f3a/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:12:13-14:85
+220                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+220-->[com.google.mlkit:vision-common:16.5.0] /home/allen/.gradle/caches/transforms-3/1dea126ebe3b1042abbc503d09ec7f3a/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:13:17-124
+221                android:value="com.google.firebase.components.ComponentRegistrar" />
+221-->[com.google.mlkit:vision-common:16.5.0] /home/allen/.gradle/caches/transforms-3/1dea126ebe3b1042abbc503d09ec7f3a/transformed/jetified-vision-common-16.5.0/AndroidManifest.xml:14:17-82
+222            <meta-data
+222-->[com.google.mlkit:common:17.1.1] /home/allen/.gradle/caches/transforms-3/d6d6f0278750bbd8560c814db5fe6c74/transformed/jetified-common-17.1.1/AndroidManifest.xml:20:13-22:85
+223                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+223-->[com.google.mlkit:common:17.1.1] /home/allen/.gradle/caches/transforms-3/d6d6f0278750bbd8560c814db5fe6c74/transformed/jetified-common-17.1.1/AndroidManifest.xml:21:17-120
+224                android:value="com.google.firebase.components.ComponentRegistrar" />
+224-->[com.google.mlkit:common:17.1.1] /home/allen/.gradle/caches/transforms-3/d6d6f0278750bbd8560c814db5fe6c74/transformed/jetified-common-17.1.1/AndroidManifest.xml:22:17-82
+225        </service>
+226
+227        <provider
+227-->[com.google.mlkit:common:17.1.1] /home/allen/.gradle/caches/transforms-3/d6d6f0278750bbd8560c814db5fe6c74/transformed/jetified-common-17.1.1/AndroidManifest.xml:9:9-13:38
+228            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+228-->[com.google.mlkit:common:17.1.1] /home/allen/.gradle/caches/transforms-3/d6d6f0278750bbd8560c814db5fe6c74/transformed/jetified-common-17.1.1/AndroidManifest.xml:10:13-78
+229            android:authorities="com.ramptests.mlkitinitprovider"
+229-->[com.google.mlkit:common:17.1.1] /home/allen/.gradle/caches/transforms-3/d6d6f0278750bbd8560c814db5fe6c74/transformed/jetified-common-17.1.1/AndroidManifest.xml:11:13-69
+230            android:exported="false"
+230-->[com.google.mlkit:common:17.1.1] /home/allen/.gradle/caches/transforms-3/d6d6f0278750bbd8560c814db5fe6c74/transformed/jetified-common-17.1.1/AndroidManifest.xml:12:13-37
+231            android:initOrder="99" />
+231-->[com.google.mlkit:common:17.1.1] /home/allen/.gradle/caches/transforms-3/d6d6f0278750bbd8560c814db5fe6c74/transformed/jetified-common-17.1.1/AndroidManifest.xml:13:13-35
+232
+233        <service
+233-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/allen/.gradle/caches/transforms-3/511457a218e9627bfa5707655c700b9d/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+234            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+234-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/allen/.gradle/caches/transforms-3/511457a218e9627bfa5707655c700b9d/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+235            android:exported="false" >
+235-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/allen/.gradle/caches/transforms-3/511457a218e9627bfa5707655c700b9d/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+236            <meta-data
+236-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/allen/.gradle/caches/transforms-3/511457a218e9627bfa5707655c700b9d/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+237                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+237-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/allen/.gradle/caches/transforms-3/511457a218e9627bfa5707655c700b9d/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+238                android:value="cct" />
+238-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/allen/.gradle/caches/transforms-3/511457a218e9627bfa5707655c700b9d/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+239        </service>
+240        <service
+240-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/allen/.gradle/caches/transforms-3/0801d4147fb9f718271c2887170ff19e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+241            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+241-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/allen/.gradle/caches/transforms-3/0801d4147fb9f718271c2887170ff19e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+242            android:exported="false"
+242-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/allen/.gradle/caches/transforms-3/0801d4147fb9f718271c2887170ff19e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+243            android:permission="android.permission.BIND_JOB_SERVICE" >
+243-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/allen/.gradle/caches/transforms-3/0801d4147fb9f718271c2887170ff19e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+244        </service>
+245
+246        <receiver
+246-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/allen/.gradle/caches/transforms-3/0801d4147fb9f718271c2887170ff19e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+247            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+247-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/allen/.gradle/caches/transforms-3/0801d4147fb9f718271c2887170ff19e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+248            android:exported="false" />
+248-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/allen/.gradle/caches/transforms-3/0801d4147fb9f718271c2887170ff19e/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+249
+250        <activity
+250-->[com.google.android.gms:play-services-base:17.6.0] /home/allen/.gradle/caches/transforms-3/45c5e1541d951ecc6e05aa51feb50f75/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:23:9-26:75
+251            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+251-->[com.google.android.gms:play-services-base:17.6.0] /home/allen/.gradle/caches/transforms-3/45c5e1541d951ecc6e05aa51feb50f75/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:24:13-79
+252            android:exported="false"
+252-->[com.google.android.gms:play-services-base:17.6.0] /home/allen/.gradle/caches/transforms-3/45c5e1541d951ecc6e05aa51feb50f75/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:25:13-37
+253            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+253-->[com.google.android.gms:play-services-base:17.6.0] /home/allen/.gradle/caches/transforms-3/45c5e1541d951ecc6e05aa51feb50f75/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:26:13-72
+254
+255        <meta-data
+255-->[com.google.android.gms:play-services-basement:17.6.0] /home/allen/.gradle/caches/transforms-3/ae72e08d8f977554640a57938629887a/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+256            android:name="com.google.android.gms.version"
+256-->[com.google.android.gms:play-services-basement:17.6.0] /home/allen/.gradle/caches/transforms-3/ae72e08d8f977554640a57938629887a/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
+257            android:value="@integer/google_play_services_version" />
+257-->[com.google.android.gms:play-services-basement:17.6.0] /home/allen/.gradle/caches/transforms-3/ae72e08d8f977554640a57938629887a/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+258
+259        <service
+259-->[androidx.room:room-runtime:2.1.0] /home/allen/.gradle/caches/transforms-3/8cc4149e3bbd3098633168f95e5c4ac7/transformed/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+260            android:name="androidx.room.MultiInstanceInvalidationService"
+260-->[androidx.room:room-runtime:2.1.0] /home/allen/.gradle/caches/transforms-3/8cc4149e3bbd3098633168f95e5c4ac7/transformed/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+261            android:exported="false" />
+261-->[androidx.room:room-runtime:2.1.0] /home/allen/.gradle/caches/transforms-3/8cc4149e3bbd3098633168f95e5c4ac7/transformed/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+262
+263        <activity
+263-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:39:9-43:20
+264            android:name="com.microblink.activity.DocumentScanActivity"
+264-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:40:13-72
+265            android:configChanges="orientation|screenSize"
+265-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:41:13-59
+266            android:screenOrientation="nosensor" >
+266-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:42:13-49
+267        </activity>
+268        <activity
+268-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:44:9-48:20
+269            android:name="com.microblink.activity.DocumentVerificationActivity"
+269-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:45:13-80
+270            android:configChanges="orientation|screenSize"
+270-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:46:13-59
+271            android:screenOrientation="nosensor" >
+271-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:47:13-49
+272        </activity>
+273        <activity
+273-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:49:9-53:20
+274            android:name="com.microblink.activity.BlinkIdActivity"
+274-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:50:13-67
+275            android:configChanges="orientation|screenSize"
+275-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:51:13-59
+276            android:screenOrientation="sensor" >
+276-->[com.microblink:blinkid:5.11.0] /home/allen/.gradle/caches/transforms-3/05f5f0d828b9b59f547f8bf69b049982/transformed/jetified-blinkid-5.11.0/AndroidManifest.xml:52:13-47
+277        </activity>
+278    </application>
+279
+280</manifest>
